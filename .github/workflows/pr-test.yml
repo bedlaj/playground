@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: test
-    uses: bedlaj/pr-comment-trigger@master
-    with:
-      command: #test
+      uses: bedlaj/pr-comment-trigger@master
+      with:
+        command: /test
     
