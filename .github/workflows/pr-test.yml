@@ -1,0 +1,15 @@
+name: pr comment
+
+on:
+  issue_comment:
+    types: [created, edited]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+    uses: bedlaj/pr-comment-trigger@master
+    with:
+      command: #test
+    
