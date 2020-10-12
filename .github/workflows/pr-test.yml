@@ -11,5 +11,6 @@ jobs:
     - name: test
       uses: bedlaj/pr-comment-trigger@master
       with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         command: /test
     
