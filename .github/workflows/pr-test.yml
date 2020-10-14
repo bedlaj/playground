@@ -14,7 +14,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           command: /test %{WORD:param1} %{INT:param2}
       - name: echo
-        if: steps.pr-step.outputs.triggered == 'true'
         run: |
+          echo 'triggered' ${steps.pr-step.outputs.triggered}
           echo 'The param1 is' ${steps.pr-step.outputs.command.param1}
           echo 'The param2 is' ${steps.pr-step.outputs.command.param2}
